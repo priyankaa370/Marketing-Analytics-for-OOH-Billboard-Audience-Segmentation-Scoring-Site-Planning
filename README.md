@@ -119,3 +119,58 @@ All raw index formulas are finally scaled using min–max normalization:
         
         Index = (value - min) / (max - min) * 100
 Normalization ensures that scores are comparable across all cities, tiers, and traffic patterns so that marketers can instantly understand relative strength. Additionally, percentile rankings and segment tagging remain consistent.
+
+
+## Distribution Analysis and Interpretation
+Before applying percentile rankings and segmenting sites, it’s important to understand how each audience index is distributed across the entire billboard network.
+These distributions reveal how common or rare different audience types are, how well the indices differentiate locations, and whether the scoring formulas behave realistically.
+
+<img width="1316" height="957" alt="image" src="https://github.com/user-attachments/assets/7190f178-69d3-48a1-a8aa-51d8f58c1253" />
+
+Below is an interpretation of the distributions:
+### Working Professional Index Distribution
+**Shape: Right-skewed, unimodal**
+**Peak Range: ~30–40**
+
+Most billboards show a moderate presence of working professionals, with scores clustering in the mid-range.
+Only a small fraction of sites achieve scores above 70, indicating that true office-dense corridors (CBDs, IT parks, commercial clusters) are relatively rare.
+
+**Interpretation:**
+Working-professional traffic is widespread across the city, but elite commuter hotspots form a small, high-value segment.
+These become the natural choice for brands targeting office goers, fintech users, B2B campaigns, and morning-commute messaging.
+
+### Student Index Distribution
+
+**Shape: Right-skewed, moderately wide**
+**Peak Range: ~25–45**
+
+Most sites fall into a mid-range of youth presence, with only a small number scoring above 60.
+This indicates that student and youth-heavy zones are highly localized, usually around schools, colleges, coaching hubs, and leisure areas.
+
+**Interpretation:**
+Youth-focused campaigns require precise placement, as high-student-density billboards are not uniformly distributed and tend to cluster in a few well-defined pockets.
+
+### Affluence Index Distribution
+
+**Shape: Nearly symmetric, mild right skew**
+**Peak Range: ~35–50**
+
+Among all indices, AffluenceIndex shows the smoothest, most balanced distribution.
+Affluent presence varies gradually across the city, with a fairly even spread of mid-to-high scores and a gentle taper at the extremes.
+
+**Interpretation:**
+Affluence is not concentrated in a few luxury zones—it is spread across multiple neighborhoods.
+This creates flexibility for premium and lifestyle brands, allowing wider targeting without relying exclusively on rare upscale clusters.
+
+### Blue Collar Index Distribution
+
+**Shape: Strong right skew, narrow peak**
+**Peak Range: ~30–50 with a long tail toward 80+**
+
+The dataset contains many mid-range values but a distinct set of high-blue-collar sites.
+These correspond to industrial belts, logistics corridors, and manufacturing zones.
+
+**Interpretation:**
+Industrial and blue-collar audiences are highly concentrated in specific regions.
+These pockets become perfect for brands targeting workforce communities, FMCG mass products, tools/equipment, and job-related campaigns.
+
