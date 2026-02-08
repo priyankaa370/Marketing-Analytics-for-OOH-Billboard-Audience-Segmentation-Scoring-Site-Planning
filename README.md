@@ -8,6 +8,7 @@ The goal of this feature engineering stage is simple:
 **turn raw traffic, demographic, and POI data into signals that actually describe who sees each billboard.**
 
 This can be understood stepwise as follows -
+
 **1. Standardizing Percentage Fields**
 
 The dataset contains several percentage columns (age groups, gender share, student share, peak-hour traffic, etc.) stored inconsistently as either 0–1 or 0–100.
